@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Pop Information</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+        .card {
+            width: 250px;
+            height: 450px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>K-Pop Information</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="{{ url_for('static', filename='ateez.jpg') }}" alt="K-Pop group or idol image">
+            <h2>ATEEZ</h2>
+            <p>ATEEZ es una boy band de Corea del Sur formada por la agencia KQ Entertainment. Conformada por ocho integrantes: Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung y Jongho. Debutaron el 24 de octubre de 2018 como 4th gen leaders con su mini álbum Treasure EP.1: All to Zero.​​</p>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='txt.jpg') }}" alt="K-Pop group or idol image">
+            <h2>TXT</h2>
+            <p>Tomorrow X Together, abreviado frecuentemente como TXT, ​​ es una boy band surcoreana de K-pop formada por Big Hit Music en 2019. El grupo está compuesto por cinco integrantes: Yeonjun, Soobin, Beomgyu, Taehyun y Huening Kai.​ TXT debutó el 4 de marzo de 2019 con el EP, The Dream Chapter: Star.</p>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='aespa.jpg') }}" alt="K-Pop group or idol image">
+            <h2>AESPA</h2>
+            <p>Aespa es un grupo femenino surcoreano formado por SM Entertainment. El grupo consta de cuatro integrantes: Karina, Giselle, Winter y Ningning. Debutaron el 17 de noviembre de 2020, con el sencillo «Black Mamba».​​</p>
+        </div>
+    </div>
+</body>
+</html>
